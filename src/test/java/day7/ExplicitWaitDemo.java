@@ -17,7 +17,7 @@ public class ExplicitWaitDemo {
 		//Declaration of Explicit wait method
 		WebDriverWait mywait = new WebDriverWait(driver,Duration.ofSeconds(10));  
 		//WebDriverWait is a selenium webdriver class having constructor named as WebDriverWait which requires two parameters (driver, duration)
-		// SInce declaration is not enough to apply it so we need to identify which element or statement is causing synchronization problem
+		// Since declaration is not enough to apply it so we need to identify which element or statement is causing synchronization problem
 		
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
@@ -108,6 +108,14 @@ public class ExplicitWaitDemo {
 
         // 23. stalenessOf(WebElement element)
         // Waits until the element is no longer attached to the DOM.
+		
+		
+		// Advantages:
+		/* 1) Conditional based
+		 * 2) Finding Element is inclusive ( for some conditions)
+		 * 3 It will wait for condition to be true, then consider the time
+		 * 4) We need to write multiple statements for multiple elements.
+		 */
 		
 	}
 }
