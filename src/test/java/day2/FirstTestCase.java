@@ -24,14 +24,14 @@ public class FirstTestCase {
 		
 		//2) Opening url https://demo.opencart.com/
 		
-		driver.get("https://demo.opencart.com/"); // from the driver object we are calling get method here. Get method is predefined method and it will open the passed url.
+		driver.get("https://www.opencart.com/"); // from the driver object we are calling get method here. Get method is predefined method and it will open the passed url.
 	
 		//3) Validate title should be "Your Store"
 		
 		// Before validating title we need to capture the actual title of the web page.
 		String actual_title = driver.getTitle(); //it will store the actual title of the page.
 		
-		if(actual_title.equals("Your Store")) {
+		if(actual_title.equals("OpenCart - Open Source Shopping Cart Solution")) {
 			System.out.println("Test Passed");
 		}
 		else {
@@ -39,7 +39,7 @@ public class FirstTestCase {
 		}
 		
 		//4) Closing the browser
-		driver.close();
+//		driver.close();
 		//driver.quit(); // we can also use it to close the browser
 	
 	

@@ -26,7 +26,7 @@ public class SecondTestCase {
 		//System.out.println(actual_title); //it will print the actual title of the webpage
 		
 		//Step 5 : Closing the browser
-		driver.close();
+//		driver.close();
 		
 		// The result will be "Test Failed" as the actual title is "nopCommerce demo store. Home page title". 
 		
