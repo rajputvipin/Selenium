@@ -44,6 +44,13 @@ public class NavigationalCommands {
 
         // Reloads the current web page
         // driver.navigate().refresh();
+        
+        //To capture current Url
+        //driver.getCurrentUrl(); 
+        
+        
+        
+        
 
         // Close all browser windows and end the WebDriver session
         driver.quit();
